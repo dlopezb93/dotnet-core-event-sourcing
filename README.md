@@ -7,6 +7,6 @@ For now it contains the basic structure of event-sourcing, using domain events.
 
 To persist the events we will use DynamoDB, using the entity ID as HashKey and the event number as RangeKey, so to reconstruct an entity we will only have to do a query by HashKey and reconstruct those events in the entity.
 
-No validations, security, exception control, logging, etc. are being contemplated.
+No validations, security, exception control, logging, unit tests, integration tests, etc. are being contemplated.
 
 There is still a lot to do!
